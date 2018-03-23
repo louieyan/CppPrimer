@@ -20,7 +20,7 @@ using std::string;
 
 int main()
 {
-    vector<string> vec;
+    /*vector<string> vec;
     string word;
     while (cin >> word) vec.push_back(word);
 
@@ -31,7 +31,18 @@ int main()
         if (i != 0 && i % 8 == 0) cout << endl;
         cout << vec[i] << " ";
     }
-    cout << endl;
+    cout << endl;*/
+    vector<string> v;
+    string s;
+    while (cin >> s)
+        v.push_back(s);
+    for (auto i : v) {
+        for (auto &j : i) {
+            j = toupper(j);
+            cout << j;
+        }
+        cout << endl;
+    }
 
     return 0;
 }
